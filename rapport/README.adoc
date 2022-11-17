@@ -94,13 +94,17 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 == Architecture du projet (PAN1)
 
-include::architecture/schema.adoc[Schéma d’architecture]
+//include::architecture/schema.adoc[Schéma d’architecture]
 
-include::architecture/interfaces.adoc[Description des interfaces]
+image::../architecture/diagramme_architecture.png['image']
 
-include::architecture/sequence.adoc[Diagramme de séquence]
+//include::architecture/interfaces.adoc[Description des interfaces]
 
-include::architecture/ihm.adoc[Interface utilisateur graphique]
+//include::architecture/sequence.adoc[Diagramme de séquence]
+
+//include::architecture/ihm.adoc[Interface utilisateur graphique]
+
+
 
 <<<
 
