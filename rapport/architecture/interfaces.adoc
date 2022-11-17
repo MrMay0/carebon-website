@@ -1,23 +1,16 @@
 === Description des interfaces (PAN1 / PAN2)
 
-Pour le PAN1, il faut identifier et décrire sommairement toutes les
-interfaces entre modules.
+==== Interface « Se déplace » - « Enregistre le trajet » 
 
-Pour le PAN2, il faut une description complète des interfaces.
+Dès que l’utilisateur indique qu’il débute un trajet les données GPS du téléphone sont partagées avec l’application et elles sont enregistrées jusqu’à la fin du trajet.
+La première fois que cette interface sera sollicitée l’application demandera au téléphone l’accès à la localisation GPS.
 
-Il faut ici une description textuelle de chaque interface, c'est-à-dire chaque
-échange entre deux blocs.
-Si c’est une interface entre deux blocs informatiques, c’est une interface
-Java.
-S’il y a des échanges de données complexes, il faut en décrire le format avec
-précision.
-Si c’est une interface entre deux blocs électroniques, c’est une description
-des signaux électroniques ou protocoles utilisés.
 
-==== InterfaceBloc1-2
+==== Interface « Scan d’article » - « Utilise l’appareil photo »
 
-Description textuelle d’interface
+Lorsque l’utilisateur décide de scanner un article l’appareil photo est ouvert depuis Carebone et la photo est enregistrée sur l’application.
+La première fois que interface sera sollicitée l’application demandera l’accès à l’appareil photo et aux photos.
 
-==== InterfaceBloc2-4
+==== Interface « Téléphone ou PC » - « Base de données »
 
-Description textuelle d’interface
+Dès qu’une information du téléphone est enregistrée sur Carebone elle est envoyé vers la base de donnée. De même l’application pourrait demander une information contenue dans la base de données .

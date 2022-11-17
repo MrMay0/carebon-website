@@ -37,8 +37,8 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 CAREBON est une application mobile mesurant l’impact carbone de son utilisateur. Celle-ci suit ses trajets mais aussi ses achats sur internet et en magasin ainsi que sa consommation ménagère.
 Cette application sera d’abord utilisée à l’échelle de Télécom Paris et potentiellement étendue à tout le plateau voir plus. Cela permettra aux utilisateurs de se rendre compte de leur impact carbone dans notre société à l’heure où une transition écologique s’impose.
 Afin d’avoir l’estimation la plus précise possible de son empreinte carbone, notre application prévoit des questions personnalisées à son utilisateur. 
-L’utilisateur aura à sa disposition sa consommation carbone, la répartition de celle-ci selon le domaine (consommation ménagère, transports, achats, alimentation) mais aussi l’évolution en fonction des jours. Des conseils et astuces seront aussi disponibles sur l’application pour diminuer ses émissions de carbone.
-Enfin, chaque utilisateur possèdera un compte et apportera la fonctionnalité de pouvoir se comparer avec ses amies possédant l’application.
+L’utilisateur aura à sa disposition sa consommation carbone, la répartition de celle-ci selon le domaine (consommation ménagère, transports, achats, alimentation) mais aussi l’évolution en fonction des jours. Des conseils et astuces personnalisés seront aussi disponibles sur l’application pour diminuer ses émissions de carbone.
+Enfin, chaque utilisateur possèdera un compte et celle-ci apportera la fonctionnalité de pouvoir se comparer avec ses amis possédant l’application.
 
 == English Summary (PAN1)
 
@@ -76,7 +76,7 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 include::architecture/schema.adoc[Schéma d’architecture]
 
-//include::architecture/interfaces.adoc[Description des interfaces]
+include::architecture/interfaces.adoc[Description des interfaces]
 
 include::architecture/sequence.adoc[Diagramme de séquence]
 
@@ -90,6 +90,5 @@ include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 include::organisation/planification.adoc[Diagramme de planification temporel des tâches]
 
-include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
 
 <<<

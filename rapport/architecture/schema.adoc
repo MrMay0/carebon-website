@@ -1,6 +1,6 @@
 === Schéma d’architecture
 
-image::../images/diagramme_architecture.png['Diagramme architectural']
+image::../images/diagramme_architecture.png['Diagramme architectural', 500, align="center"]
 
 ==== Description des blocs
 
