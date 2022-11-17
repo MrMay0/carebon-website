@@ -20,8 +20,7 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 * Ristorcelli Ulysse
 * El Arji Hamza
 * Tighilt Mouloud
-* Nom5
-* Nom6
+* Bosle Elie
 
 === Tuteur
 
@@ -96,11 +95,14 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 //include::architecture/schema.adoc[Schéma d’architecture]
 
-image::../architecture/diagramme_architecture.png['image']
+image::../images/diagramme_architecture.png['Diagramme architectural']
 
 //include::architecture/interfaces.adoc[Description des interfaces]
 
 //include::architecture/sequence.adoc[Diagramme de séquence]
+
+image::../images/sequence_photo.png['Séquence Photo']
+image::../images/sequence_GPS.png['Séquence GPS']
 
 //include::architecture/ihm.adoc[Interface utilisateur graphique]
 
