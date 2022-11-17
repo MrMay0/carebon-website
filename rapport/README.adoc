@@ -24,11 +24,11 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 === Tuteur
 
-* xx yy
+* Dang-Kien Pham
 
 === Encadrant génie logiciel
 
-* xx yy
+* Marc Hulcelle
 
 <<<
 
