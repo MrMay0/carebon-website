@@ -6,8 +6,12 @@ image::../images/diagramme_architecture.png['Diagramme architectural']
 
 ===== Utilisateur
 
-Description textuelle du bloc 1.
+L'ensemble des actions analysées de l'utilisateur ou ses requêtes
 
 ===== Téléphone ou PC
 
-Description textuelle du bloc 2.
+Toutes les fonctionnalités de CareBon seront disponibles sur le téléphone mais certaines seront limités sur l'ordinateur, qui n'est pas aussi transportable que le téléphone.
+
+===== Base de données
+
+Nous auront un serveur qui regroupera plusieurs bases de données et qui gardera les données des utilisateurs.

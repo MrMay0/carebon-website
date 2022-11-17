@@ -1,5 +1,5 @@
-= Rapport d’avancement: groupe “x.y”
-PACT groupe xy (Les plus beaux)
+= Rapport d’avancement: groupe 6.1
+PACT groupe 6.1
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :doctype: book
 :stem: latexmath
@@ -96,20 +96,3 @@ include::organisation/planification.adoc[Diagramme de planification temporel des
 include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
 
 <<<
-
-[bibliography]
-== Bibliographie (PAN1+)
-
-include::References.adoc[Bibliographie]
-
-<<<
-
-== Annexes
-
-include::annexes/modifications.adoc[Modifications (PAN2+)]
-
-include::annexes/avancement.adoc[Avancement des modules]
-
-include::annexes/moduleX.adoc[Avancement module X]
-
-include::annexes/moduleY.adoc[Avancement module Y]
