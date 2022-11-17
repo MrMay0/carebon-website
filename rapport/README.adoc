@@ -17,7 +17,7 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 === Membres du groupe
 
 * Arette-Hourquet Jean-Loup
-* Nom2
+* Ristorcelli Ulysse
 * Nom3
 * Nom4
 * Nom5
