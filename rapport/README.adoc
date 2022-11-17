@@ -12,15 +12,15 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 // Partie non numérotée
 :sectnums!:
-== « Nom du groupe »
+== « CareBon »
 
 === Membres du groupe
 
 * Arette-Hourquet Jean-Loup
-* Ristorcelli Ulysse
-* El Arji Hamza
-* Tighilt Mouloud
 * Bosle Elie
+* El Arji Hamza
+* Ristorcelli Ulysse
+* Tighilt Mouloud
 
 === Tuteur
 
@@ -53,22 +53,6 @@ purus in tellus.
 
 <<<
 
-*Notes concenant le rapport*
-
-Les différentes pages du document sont rédigées en utilisant le langage
-AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
-
-* des images,
-* des liens,
-* des équations.
-
-La structure du rapport (parties, sections et la relation avec les
-différents fichiers) se trouve dans le fichier courant.
-
-**Prenez le temps** de supprimer le texte de remplissage et les sections non
-utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non
-utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc,
-il suffit de les précéder de deux slashs (`//`).
 
 <<<
 toc::[]
@@ -93,19 +77,14 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 == Architecture du projet (PAN1)
 
-//include::architecture/schema.adoc[Schéma d’architecture]
-
-image::../images/diagramme_architecture.png['Diagramme architectural']
+include::architecture/schema.adoc[Schéma d’architecture]
 
 //include::architecture/interfaces.adoc[Description des interfaces]
 
-//include::architecture/sequence.adoc[Diagramme de séquence]
+include::architecture/sequence.adoc[Diagramme de séquence]
 
-image::../images/sequence_photo.png['Séquence Photo']
-image::../images/sequence_GPS.png['Séquence GPS']
 
-//include::architecture/ihm.adoc[Interface utilisateur graphique]
-
+include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 
 <<<
