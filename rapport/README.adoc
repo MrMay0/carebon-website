@@ -18,7 +18,7 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 * Arette-Hourquet Jean-Loup
 * Ristorcelli Ulysse
-* Nom3
+* El Arji Hamza
 * Nom4
 * Nom5
 * Nom6
