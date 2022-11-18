@@ -8,9 +8,9 @@ La première fois que cette interface sera sollicitée l’application demandera
 
 ==== Interface « Scan d’article » - « Utilise l’appareil photo »
 
-Lorsque l’utilisateur décide de scanner un article l’appareil photo est ouvert depuis Carebone et la photo est enregistrée sur l’application.
+Lorsque l’utilisateur décide de scanner un article l’appareil photo est ouvert depuis Carebon et la photo est enregistrée sur l’application.
 La première fois que interface sera sollicitée l’application demandera l’accès à l’appareil photo et aux photos.
 
 ==== Interface « Téléphone ou PC » - « Base de données »
 
-Dès qu’une information du téléphone est enregistrée sur Carebone elle est envoyé vers la base de donnée. De même l’application pourrait demander une information contenue dans la base de données .
+Dès qu’une information du téléphone est enregistrée sur Carebon elle est envoyé vers la base de donnée. De même l’application pourrait demander une information contenue dans la base de données .

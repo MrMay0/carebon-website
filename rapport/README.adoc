@@ -38,13 +38,13 @@ CAREBON est une application mobile mesurant l’impact carbone de son utilisateu
 Cette application sera d’abord utilisée à l’échelle de Télécom Paris et potentiellement étendue à tout le plateau voir plus. Cela permettra aux utilisateurs de se rendre compte de leur impact carbone dans notre société à l’heure où une transition écologique s’impose.
 Afin d’avoir l’estimation la plus précise possible de son empreinte carbone, notre application prévoit des questions personnalisées à son utilisateur. 
 L’utilisateur aura à sa disposition sa consommation carbone, la répartition de celle-ci selon le domaine (consommation ménagère, transports, achats, alimentation) mais aussi l’évolution en fonction des jours. Des conseils et astuces personnalisés seront aussi disponibles sur l’application pour diminuer ses émissions de carbone.
-Enfin, chaque utilisateur possèdera un compte et celle-ci apportera la fonctionnalité de pouvoir se comparer avec ses amis possédant l’application.
+Enfin, chaque utilisateur possédera un compte qui permettra de se comparer avec ses amis possédant l’application et de synchroniser ses données sur plusieurs appareils.
 
 == English Summary (PAN1)
 
 CAREBON is a mobile application that measures the carbon impact of its user. It tracks the user's journeys, purchases on the internet and in shops, and household consumption.
 This application will initially be used at the Télécom Paris level and could potentially be extended to the whole plateau or even more. This will enable users to become aware of their carbon impact in our society at a time when an ecological transition is needed.
-In order to have the most accurate estimate of its carbon footprint possible, our application provides users with personalised questions. 
+In order to have the most accurate estimate of its carbon footprint possible, our application provides users with personalized questions. 
 The user will have at his disposal his carbon consumption, the breakdown of it according to the field (household consumption, transport, purchases, food) but also the evolution according to the days. Tips and tricks will also be available on the application to reduce carbon emissions.
 Finally, each user will have an account and will be able to compare themselves with their friends who have the application.
 
