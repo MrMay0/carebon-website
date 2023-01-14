@@ -1,0 +1,5 @@
+Pour lancer le serveur, installer Flask: https://flask.palletsprojects.com/en/2.2.x/installation/#
+
+Puis dans le terminal écrire: python -m flask --app serveur_test run
+
+Aller dans le navigateur: http://127.0.0.1:5000/
