@@ -24,18 +24,35 @@ questionnaire = {'1': Question("Combien de mètre carrés fait la maison ?", ("2
 def hello_world():
     return "<p> Hello, World! </p>"
 
-@app.route("/trajet")
-def trajet():
+@app.route("/somme/<a>/<b>")
+def somme(a, b):
+    return f"<p> {a} + {b} = {int(a)+int(b)} </p>"
+
+@app.route("/deplacement")
+def deplacement():
     return "<p> Déplacement </p>"
 
-@app.route("/questionnaire/<question>/<reponse>")
-def questionnaire(question, reponse):
+@app.route("/reponse/<question>/<reponse>")
+def reponse(question, reponse):
     print(question, reponse)
     print(type(question), type(reponse))
     ans = questionnaire[question].values(reponse)
     return f"<p> {ans} </p>"
 
+@app.route("/getQuestion")
+def getQuestion():
+    return "question"
 
-@app.route("/somme/<a>/<b>")
-def somme(a, b):
-    return f"<p> {a} + {b} = {a+b} </p>"
+@app.route("/getConso")
+def getConso():
+    return "conso"
+
+@app.route("/classement")
+def classement():
+    return "classement"
+
+@app.route("/achat")
+def achat():
+    return "achat"
+
+app.run()
