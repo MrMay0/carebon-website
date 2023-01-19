@@ -55,4 +55,9 @@ def classement():
 def achat():
     return "achat"
 
-app.run()
+@app.route("/delete")
+def delete():
+    return "delete"
+
+if __name__ == "__main__":
+    app.run()
