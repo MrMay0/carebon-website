@@ -38,24 +38,20 @@ def achat():
 def delete():
     return "delete"
 
-@app.route("/getConso")
-def delete():
-    return "Votre consommation"
-
 @app.route("/getRank")
-def delete():
+def getRank():
     return "Votre classement"
 
 @app.route("/getGlobal")
-def delete():
+def getGlobal():
     return "Consommation Globale"
 
 @app.route("/setArticle")
-def delete():
+def setArticle():
     return "Donner la consommation d'un article"
 
 @app.route("/createAccount")
-def delete():
+def createAccount():
     return "Créer un compte"
 
 if __name__ == "__main__":
