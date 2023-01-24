@@ -19,3 +19,6 @@ _book
 
 # Mac support
 *.DS_Store
+
+__pycache__/
+*.pyc
