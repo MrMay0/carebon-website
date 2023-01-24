@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>Page d'accueil</title>
 </head>
 <body>
     <div class="header">
     <header>
         <nav>
-            <a href="#"><img src="../static/logo.jpg" alt="image du logo" class="logo"></a>
+            <a href="#"><img src="{{ url_for('static', filename='logo.jpg') }}" alt="image du logo" class="logo"></a>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">S'incrire</a></li>
                 <li><a href="#">Se Connecter</a></li>
             </ul>
-            <img src="../static/menu2.png" alt="logo de menu" class= "menu-icon">
+            <img src="{{ url_for('static', filename='menu2.png') }}" alt="logo de menu" class= "menu-icon">
         </nav>
     </header>
 
