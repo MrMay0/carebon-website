@@ -9,3 +9,4 @@ sudo nano app.py
 
 Pour restart le serveur (après avoir modifié le code par exemple)
 sudo service apache2 restart
+ou sinon: restart-server
