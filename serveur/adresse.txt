@@ -12,3 +12,5 @@ sudo service apache2 restart
 ou sinon: restart-server
 
 dossier des logs: /var/log/apache2
+
+autorisation: sudo chown -R www-data data
