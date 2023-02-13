@@ -84,7 +84,7 @@ def goHome():
 
 @app.route("/read")
 def read():
-    with open(r"data.txt", 'r') as file:
+    with open("data/data.txt", 'r') as file:
         text = file.readlines()
         line = int(request.args.get('line'))
         print(text)
@@ -95,7 +95,7 @@ def read():
 
 @app.route("/write")
 def write():
-    with open(r"data.txt", 'a') as file:
+    with open("data/data.txt", 'a') as file:
         file.write("\n" + request.args.get("text"))
     return "Données écrites"
 
