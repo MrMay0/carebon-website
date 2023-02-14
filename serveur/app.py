@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import table
 import os, sys
+import subprocess
 
 app = Flask(__name__)
 
@@ -98,6 +99,18 @@ def write():
     with open("data/data.txt", 'a') as file:
         file.write("\n" + request.args.get("text"))
     return "Données écrites"
+
+
+@app.route("/restart")
+def restart():
+    try:
+        return "Redémarrage du serveur"
+    finally:
+        func = request.environ.get('werkzeug.server.shutdown')
+        if func is None:
+            raise RuntimeError('Not running with the Werkzeug Server')
+        func()
+        rc = subprocess.call("update-server")
 
 
 if __name__ == "__main__":
