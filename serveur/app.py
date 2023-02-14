@@ -101,5 +101,13 @@ def write():
     return "Données écrites"
 
 
+@app.route("/restart")
+def restart():
+    try:
+        return "Redémarrage du serveur"
+    finally:
+        rc = subprocess.call("update-server")
+
+
 if __name__ == "__main__":
     app.run()
