@@ -9,7 +9,7 @@ os.chdir(sys.path[0])
 
 @app.route("/")
 def hello_world():
-    return "Pact groupe 6.1\nConsEcolo\nBienvenue"
+    return "Pact groupe 6.1 ConsEcolo Test"
 
 
 @app.route("/somme/<a>/<b>")
