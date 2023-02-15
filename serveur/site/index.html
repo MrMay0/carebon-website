@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <div class="header">
+    <header>
+        <nav>
+            <a href="#"><img src="images/logo.jpg" alt="image du logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">S'incrire</a></li>
+                <li><a href="#">Se Connecter</a></li>
+            </ul>
+            <img src="images/menu2.png" alt="logo de menu" class= "menu-icon">
+        </nav>
+    </header>
+
+    <section class="text">
+        <h1>Carebon: Be <span class="auto-typing"></span></h1>
+        <p>Bienvenue sur le site qui regroupe et calcule ton bilan carbone. <br>
+        Si tu veux tout connaître de ta consommation, de tes trajet à tes courses: Rejoins nous!</p>
+        <a href="#" class="presentation">Qui sommes nous ?</a> <a href="#" class="carebon">Qu'est-ce que CareBon ?</a>
+    </section>
+
+    <div class="overlay">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed('.auto-typing',{
+            strings: ['smart.','fun.','green!'],
+            typeSpeed: 100, /*vitesse de saisie en ms*/
+            backSpeed: 100, /*temps de suppression*/
+            loop: true,
+            fadeOut: true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 500
+        })
+    </script>
+    </div>
+</body>
+</html>
