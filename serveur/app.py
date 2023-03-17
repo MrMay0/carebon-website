@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import table
 import os, sys
 import subprocess
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -22,6 +23,23 @@ def sommeQ():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
     return f"{a} + {b} = {a+b}"
+
+
+@app.route("/sommeJson/<a>/<b>")
+def sommeJson(a, b):
+    return jsonify(
+                value=int(a)+int(b),
+                message=f"{a} + {b} = {int(a)+int(b)}"
+            )
+
+@app.route("/sommePOST", methods=['POST'])
+def sommePOST():
+    a = int(request.form['a'])
+    b = int(request.form['b'])
+    return jsonify(
+                value=int(a)+int(b),
+                message=f"{a} + {b} = {int(a)+int(b)}"
+            )
 
 
 @app.route("/deplacement")
