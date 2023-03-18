@@ -34,11 +34,12 @@ def sommeJson(a, b):
 
 @app.route("/sommePOST", methods=['POST'])
 def sommePOST():
-    a = int(request.form['a'])
-    b = int(request.form['b'])
+    data = request.get_json()
+    a = int(data.form['a'])
+    b = int(data.form['b'])
     return jsonify(
-                value=int(a)+int(b),
-                message=f"{a} + {b} = {int(a)+int(b)}"
+                value=a + b,
+                message=f"{a} + {b} = {a+b}"
             )
 
 

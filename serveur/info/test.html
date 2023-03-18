@@ -12,7 +12,8 @@
   <p>+</p>
   <input type="text" id="b">
 
-  <button onclick="maFonction()">=</button>
+  <button onclick="maFonction()">Premiere version</button>
+  <button onclick="maFonction2()">Deuxième version</button>
 
   <p id="reponse"></p>
 
@@ -26,7 +27,7 @@
       xhr.send();
       //xhr.responseType = "json";
       xhr.onload = () => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
+        if (xhr.status == 200) {
           const data = xhr.response;
           var paragraphe = document.getElementById("reponse");
 			    paragraphe.innerHTML = data;
@@ -38,24 +39,24 @@
 
   function maFonction2(){
     const url = 'http://pact-6.r2.enst.fr/flask/sommePOST';
-    const data = {a: document.getElementById("a").value, 
-                  b: document.getElementById("b").value};
+    const data = JSON.stringify({
+      a: parseInt(document.getElementById("a").value), 
+      b: parseInt(document.getElementById("b").value)
+    });
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', url);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          var paragraphe = document.getElementById("reponse");
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onload = () => {
+      if (xhr.status == 200) {
           const response = JSON.parse(xhr.responseText);
+          var paragraphe = document.getElementById("reponse");
 			    paragraphe.innerHTML = response.value;
-        } else {
-          console.error('Error sending POST request');
-        }
+      } else {
+        console.error('Error sending POST request');
       }
     };
-    xhr.send(JSON.stringify(data));
+    xhr.send(data);
   }
   </script>
 </body>
