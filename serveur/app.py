@@ -38,7 +38,7 @@ def sommePOST():
     a = data['a']
     b = data['b']
     return jsonify(
-                value=a + b,
+                value= a+b,
                 message=f"{a} + {b} = {a+b}"
             )
 

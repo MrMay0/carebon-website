@@ -23,7 +23,7 @@
       var b = document.getElementById("b").value;
     
       const xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://pact-6.r2.enst.fr/flask/somme/" + a + "/" + b);
+      xhr.open("GET", "http://pact-6.r2.enst.fr/flask/somme/" + a + "/" + b, true);
       xhr.send();
       //xhr.responseType = "json";
       xhr.onload = () => {
@@ -45,8 +45,8 @@
     });
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader("Content-type", "application/json");
     xhr.onload = () => {
       if (xhr.status == 200) {
           const response = JSON.parse(xhr.responseText);
