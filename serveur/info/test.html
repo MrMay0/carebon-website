@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My HTML Page with JS</title>
+</head>
+
+<body>
+  <h1>Exemple de bouton avec fonction JavaScript</h1>
+
+  <input type="text" id="a">
+  <p>+</p>
+  <input type="text" id="b">
+
+  <button onclick="maFonction()">Premiere version</button>
+  <button onclick="maFonction2()">Deuxième version</button>
+
+  <p id="reponse"></p>
+
+  <script>
+    function maFonction() {
+      var a = document.getElementById("a").value;
+      var b = document.getElementById("b").value;
+    
+      //debut de la requete
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://pact-6.r2.enst.fr/flask/somme/" + a + "/" + b, true);
+      xhr.onload = () => {
+        if (xhr.status == 200) {
+          //fonction à exécuter après avoir reçu une réponse
+          const data = xhr.response;
+          var paragraphe = document.getElementById("reponse");
+			    paragraphe.innerHTML = data;
+        } else {
+          //fonction à exécuter en cas d'erreur
+          console.log(`Error: ${xhr.status}`);
+        }
+      xhr.send();
+      //fonction à faire en attendant la réponse
+    }
+    };
+
+  function maFonction2(){
+    const url = 'http://pact-6.r2.enst.fr/flask/sommePOST';
+
+    // données à envoyer
+    const data = {
+      a: parseInt(document.getElementById("a").value), 
+      b: parseInt(document.getElementById("b").value)
+    };
+
+    // début de la requête
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onload = () => {
+      if (xhr.status == 200) {
+          //fonction à exécuter après avoir reçu une réponse
+          const response = JSON.parse(xhr.responseText);
+          var paragraphe = document.getElementById("reponse");
+			    paragraphe.innerHTML = response.value;
+      } else {
+        //fonction à exécuter en cas d'erreur
+        console.error('Error sending POST request');
+      }
+    };
+    xhr.send(JSON.stringify(data));
+    //fonction à faire en attendant la réponse
+  }
+  </script>
+</body>
+
+</html>

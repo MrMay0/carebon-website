@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import table
 import os, sys
 import subprocess
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ os.chdir(sys.path[0])
 
 @app.route("/")
 def hello_world():
-    return "Pact groupe 6.1 ConsEcolo Test"
+    return "Pact groupe 6.1 CareBon Test"
 
 
 @app.route("/somme/<a>/<b>")
@@ -22,6 +23,24 @@ def sommeQ():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
     return f"{a} + {b} = {a+b}"
+
+
+@app.route("/sommeJson/<a>/<b>")
+def sommeJson(a, b):
+    return jsonify(
+                value=int(a)+int(b),
+                message=f"{a} + {b} = {int(a)+int(b)}"
+            )
+
+@app.route("/sommePOST", methods=['POST'])
+def sommePOST():
+    data = request.get_json()
+    a = data['a']
+    b = data['b']
+    return jsonify(
+                value= a+b,
+                message=f"{a} + {b} = {a+b}"
+            )
 
 
 @app.route("/deplacement")
