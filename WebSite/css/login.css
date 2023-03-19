@@ -7,7 +7,7 @@
 }
 
 body {
-    background: var(--color-bg1);
+    background: var(--color-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +16,20 @@ body {
     height: 100vh;
 }
 
+.nav__menu a {
+    color: var(--color-white);
+}
+
+.nav__container a {
+    color: var(--color-white);
+}
 .containerF {
     position: relative;
     overflow: hidden;
     min-height: 480px;
     width: 768px;
     max-width: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0,32,63,.45),0 8px 8px rgba(0,32,63,.45);
 }
@@ -34,7 +41,7 @@ body {
     transition: .6s ease-in-out;
 }
 
-.container.panel-active .sign-up-container {
+.containerF.panel-active .sign-up-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -52,7 +59,7 @@ body {
     } 
 }
 
-.container.panel-active .login-container {
+.containerF.panel-active .login-container {
     transform: translateX(100%);
 }
 
@@ -70,7 +77,7 @@ body {
 }
 
 form {
-    background-color: #fff;
+    background-color: var(--color-bg1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +88,8 @@ form {
 }
 
 input {
-    background-color: #adf0d1;
+    background-color: var(--color-bg);
+    color: var(--color-white);
     border: none;
     padding: 12px 15px;
     margin: 8px 0px;
@@ -89,27 +97,27 @@ input {
 }
 
 button.ghost {
-    background-color: transparent;
+    background: var(--color-success);
 }
 
 button {
-    background-color: #adf0d1;
-    color: #00203f;
-    border: 1px solid #adf0d1;
+    background: var(--color-danger);
+    color: var(--color-white);
     font-style: 16px;
     font-weight: bold;
     padding: 16px 32px;
     margin-top: 24px;
     letter-spacing: 1px;
     border-radius: 50px;
-    border-color: rgba(0,32,63,.45);
-    transition: .2s ease-in;
+    border: 1px solid transparent;
+    transition: var(--transition);
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #00203f;
-    color: #adf0d1;
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
 }
 
 button:active {
@@ -128,7 +136,7 @@ button:active {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: #adf0d1;
+    background-color: var(--color-white);
     border: 1px solid  rgba(0,32,63,.45);
 }
 
@@ -159,14 +167,14 @@ a {
     transition: transform .6s ease-in-out;
 }
 
-.container.panel-active .overlay-container {
+.containerF.panel-active .overlay-container {
     transform: translateX(-100%);
 }
 
 .overlay {
-    background: linear-gradient(to right, #adf0d1, #e7f0fd);
-    background: #adf0d1;
-    color: #00203f;
+    background: linear-gradient(to right, var(--color-bg2), var(--color-bg1));
+    background: var(--color-bg2);
+    color: var(--color-white);
     position: relative;
     left: -100%;
     width: 200%;
@@ -175,7 +183,7 @@ a {
     transition: transform .6s ease-in-out;
 }
 
-.container.panel-active .overlay {
+.containerF.panel-active .overlay {
     transform: translateX(50%);
 }
 
@@ -198,7 +206,7 @@ a {
     transform: translateX(-20%);
 }
 
-.container.panel-active .overlay-left {
+.containerF.panel-active .overlay-left {
     transform: translateX(0);
 }
 
@@ -207,7 +215,7 @@ a {
     transform: translateX(0);
 }
 
-.container.panel-active .overlay-right {
+.containerF.panel-active .overlay-right {
     transform: translateX(20%);
 }
 
